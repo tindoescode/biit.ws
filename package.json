@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,6 +12,14 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-twin": "^1.0.2",
+    "tailwindcss": "^2.2.15",
+    "twin.macro": "^2.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
   }
 }
